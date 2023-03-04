@@ -176,7 +176,7 @@ if __name__ == "__main__":
     with open("pubkey.pem", "r") as pkf:
         pubkey_pem = pkf.read()
     global_data = {
-        "curve": "SECP256R1",
+        "curve": "secp256k1",
         "public_key": pubkeyPEM_to_xy(pubkey_pem),
         "known_type": "LSB",
         "known_bits": KNOWN_BITS,
